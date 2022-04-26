@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/header_commer"></include>
+    <com.wzx.tipcontent.weight.ClearEditText
+        android:id="@+id/et_search_shopp"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:drawablePadding="10dp"
+        android:paddingRight="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_shape"
+        android:drawableLeft="@mipmap/iv_search"
+        android:imeOptions="actionSearch"
+        android:hint="请输入关键字"
+        android:paddingLeft="10dp" />
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tablaout"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        tl:tl_textBold="SELECT"
+        tl:tl_indicator_color="@color/login_bg"
+        tl:tl_textSelectColor="@color/black"
+        tl:tl_textUnselectColor="@color/dialog_tv_bg"
+        tl:tl_indicator_corner_radius="1.5dp"
+        tl:tl_indicator_height="3dp"
+        tl:tl_indicator_width="10dp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

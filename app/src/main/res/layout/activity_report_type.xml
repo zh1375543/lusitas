@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <include layout="@layout/header_commer"></include>
+    <com.wzx.tipcontent.weight.ClearEditText
+        android:id="@+id/et_search"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:drawablePadding="10dp"
+        android:paddingRight="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_shape"
+        android:drawableLeft="@mipmap/iv_search"
+        android:imeOptions="actionSearch"
+        android:hint="请输入关键字"
+        android:paddingLeft="10dp" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/swipeLaoutType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:srlAccentColor="@color/white"
+        app:srlHeaderInsetStart="-5dp"
+        app:srlEnableHeaderTranslationContent="false"
+        app:srlPrimaryColor="@color/login_bg">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_type"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <include layout="@layout/network_item" />
+</LinearLayout>

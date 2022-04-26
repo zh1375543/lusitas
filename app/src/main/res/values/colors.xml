@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#344ed9</color>
+    <color name="colorPrimaryDark">#344ed9</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="graye5">#e5e5e5</color>
+    <color name="graye2">#E8E8EB</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#222222</color>
+    <color name="home_line_bg">#f2f2f2</color>
+
+    <color name="login_bg">#344ed9</color>
+
+    <color name="color_green">#31C879</color>
+    <color name="title_red">#F5515F</color>
+    <color name="main_meun_color">#f3186c</color>
+    <color name="discuss_tv_color">#9AD237</color>
+    <color name="ring_bg1">#3DDBD5</color>
+    <color name="ring_bg2">#5EA0FA</color>
+    <color name="color_work">#52687a</color>
+    <color name="color_btn">#a5bff8</color>
+    <color name="line_bg">#F0F0F0</color>
+    <color name="tv_bg">#F5F5F5</color>
+    <color name="dialog_tv_bg">#949DA6</color>
+</resources>

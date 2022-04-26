@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/header_commer"></include>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_below="@+id/iv_login_log"
+            android:layout_marginTop="30dp"
+            android:id="@+id/et_usernickname_re"
+            android:singleLine="true"
+            android:background="@null"
+            android:hint="请输入昵称"
+            android:maxLength="8"
+            android:textSize="16sp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" />
+        <View
+            android:layout_below="@id/et_usernickname_re"
+            android:layout_width="fill_parent"
+            android:id="@+id/view_nickname"
+            android:background="#F0F0F0"
+            android:layout_height="1dp"></View>
+    <EditText
+        android:layout_below="@id/view_nickname"
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_username_re"
+        android:singleLine="true"
+        android:background="@null"
+        android:maxLength="8"
+        android:hint="请输入用户名"
+        android:textSize="16sp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" />
+    <View
+        android:layout_below="@id/et_username_re"
+        android:layout_width="fill_parent"
+        android:id="@+id/view_name"
+        android:background="#F0F0F0"
+        android:layout_height="1dp"></View>
+    <EditText
+        android:layout_below="@id/et_username_re"
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_pwd_re"
+        android:singleLine="true"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:hint="请输入密码"
+        android:textSize="16sp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" />
+    <View
+        android:layout_below="@id/et_pwd_re"
+        android:layout_width="fill_parent"
+        android:id="@+id/view_pwd"
+        android:background="#F0F0F0"
+        android:layout_height="1dp"></View>
+
+        <EditText
+            android:layout_below="@+id/view_pwd"
+            android:layout_marginTop="20dp"
+            android:id="@+id/et_pwd_again_re"
+            android:singleLine="true"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:hint="请再次输入密码"
+            android:textSize="16sp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" />
+        <View
+            android:layout_below="@+id/et_pwd_again_re"
+            android:layout_width="fill_parent"
+            android:id="@+id/view_pwd_again"
+            android:background="#F0F0F0"
+            android:layout_height="1dp"></View>
+
+
+        <EditText
+            android:layout_below="@+id/view_pwd_again"
+            android:layout_marginTop="20dp"
+            android:id="@+id/et_Phone"
+            android:singleLine="true"
+            android:background="@null"
+            android:inputType="phone"
+            android:hint="请输入手机号"
+            android:textSize="16sp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" />
+        <View
+            android:layout_below="@+id/et_Phone"
+            android:layout_width="fill_parent"
+            android:id="@+id/view_number"
+            android:background="#F0F0F0"
+            android:layout_height="1dp"></View>
+    <LinearLayout
+        android:layout_below="@+id/view_number"
+        android:layout_marginTop="20dp"
+        android:id="@+id/laout_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_code_re"
+            android:singleLine="true"
+            android:hint="请输入验证码"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:background="@null"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="40dp" />
+        <ImageView
+            android:id="@+id/VerificationCode_re"
+            android:layout_width="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:background="@drawable/edite_text_style" />
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_reigster"
+            android:textSize="16sp"
+            android:text="注册"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/selector_login_bg"
+            android:textColor="@color/white"
+            android:layout_below="@+id/laout_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_below="@id/btn_reigster"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:text="登录"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

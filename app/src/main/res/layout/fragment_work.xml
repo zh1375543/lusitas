@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="首页"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/login_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/swipeLaout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:srlAccentColor="@color/white"
+        app:srlHeaderInsetStart="-5dp"
+        app:srlEnableHeaderTranslationContent="false"
+        app:srlPrimaryColor="@color/login_bg">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <com.stx.xhb.xbanner.XBanner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:AutoPlayTime="3000"
+                app:isAutoPlay="true"
+                app:isClipChildrenModeLessThree="true"
+                app:isClipChildrenMode="false"
+                app:isHandLoop="true"
+                app:isShowIndicatorOnlyOne="true"
+                app:pageChangeDuration="800"
+                app:pointNormal="@mipmap/icon_page_normal"
+                app:pointSelect="@mipmap/icon_page_select"
+                app:pointsPosition="CENTER"
+                app:pointsVisibility="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_all"
+                    android:drawableTop="@mipmap/icon_all"
+                    android:text="全部"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_online"
+                    android:drawableTop="@mipmap/icon_online"
+                    android:text="电商"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_pany"
+                    android:drawableTop="@mipmap/icon_pany"
+                    android:text="银行"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_shopp"
+                    android:drawableTop="@mipmap/icon_shopp"
+                    android:text="购物精选"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_margin="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+            <include layout="@layout/network_item" />
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
