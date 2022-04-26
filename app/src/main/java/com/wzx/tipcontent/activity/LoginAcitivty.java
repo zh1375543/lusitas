@@ -38,7 +38,7 @@ import butterknife.OnClick;
 /**
  * on 2021/3/8
  *
- * @Author zhanghui 的文件
+ * @Author zhanghuiss
  * @Description
  */
 public class LoginAcitivty extends BaseActivity implements ServerRequest.InterfaceCode{
